@@ -1,0 +1,35 @@
+# Robots.txt for Survivor.io Calculator
+# https://danke007.vip/
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap location
+Sitemap: https://danke007.vip/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow search engines to index images
+User-agent: Googlebot-Image
+Allow: /favicon.png
+Allow: /page/*.png
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
