@@ -1,0 +1,34 @@
+# GitHub Pages Configuration for Survivor.io Calculator
+
+# Site settings
+title: Survivor.io Calculator
+description: Ultimate Survivor.io calculator and build guide. Optimize relic cores, calculate damage multipliers, check crit rates, track events, and master all game effects.
+url: https://danke007.vip
+baseurl: ""
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from build
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - package.json
+  - package-lock.json
+  - node_modules/
+
+# Include dotfiles
+include:
+  - .well-known
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

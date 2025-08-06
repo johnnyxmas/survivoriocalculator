@@ -17,3 +17,113 @@ div[style*="watermark"] {
 [id*="wx-"] {
     display: none !important;
 }
+
+/* Hide payment and banner elements */
+[class*="banner"],
+[class*="payment"],
+[class*="notice"],
+[class*="announcement"],
+[id*="banner"],
+[id*="payment"],
+.q-banner,
+.banner,
+.payment-banner,
+.notice-banner,
+.top-banner,
+.header-banner {
+    display: none !important;
+}
+
+/* Hide elements containing payment/free text */
+div:has-text("payment method"),
+div:has-text("basic functions are free"),
+*:contains("payment method"),
+*:contains("basic functions are free") {
+    display: none !important;
+}
+
+/* Additional selectors for common banner patterns */
+[class*="alert"],
+[class*="notification"],
+.alert-banner,
+.notification-banner,
+.info-banner {
+    display: none !important;
+}
+
+/* Hide Quasar framework banners */
+.q-banner,
+.q-notification,
+.q-alert {
+    display: none !important;
+}
+
+/* Hide navigation menu */
+.q-header,
+.q-toolbar,
+.q-drawer,
+.q-page-container > header,
+nav,
+[class*="navigation"],
+[class*="nav-menu"],
+[class*="navbar"],
+[id*="navigation"],
+[id*="nav-menu"],
+[id*="navbar"] {
+    display: none !important;
+}
+
+/* Adjust page container to remove header space */
+.q-page-container {
+    padding-top: 0 !important;
+}
+
+/* Light/Dark theme toggle button styles */
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: var(--q-primary, #007bff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .q-card,
+body.dark-theme .q-dialog__inner > div {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #4a4a4a;
+}
