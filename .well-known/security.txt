@@ -1,0 +1,11 @@
+# Security Policy for Survivor.io Calculator
+# https://danke007.vip/
+
+Contact: security@danke007.vip
+Expires: 2026-01-01T00:00:00.000Z
+Preferred-Languages: en, zh
+Canonical: https://danke007.vip/.well-known/security.txt
+
+# Reporting Security Issues
+# Please report security vulnerabilities responsibly
+# We appreciate your efforts to improve the security of our service

@@ -1,0 +1,29 @@
+{
+  "name": "Survivor.io Calculator - Build Guide & Damage Optimizer",
+  "short_name": "Survivor.io Calc",
+  "description": "Ultimate Survivor.io calculator and build guide. Optimize relic cores, calculate damage multipliers, check crit rates, track events, and master all game effects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

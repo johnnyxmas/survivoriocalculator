@@ -17,9 +17,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://danke007.vip/">
     
-    <!-- Favicon -->
+    <!-- Favicon and PWA -->
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="manifest" href="/manifest.json">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -44,11 +45,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="format-detection" content="telephone=no">
     
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' https: data:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
     <!-- External Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet"
         type="text/css">
-    <link href="https://unpkg.com/@mdi/font@^6.0.0/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/quasar@2.10.1/dist/quasar.prod.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@mdi/font@6.9.96/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" integrity="sha384-wERqJAK7mXTkdMNaWPZ5UW8AwDMENnEYGLbzjV9ddZEgmjkO0z/XhVXJXp6ye0Hq" crossorigin="anonymous">
+    <link href="https://unpkg.com/quasar@2.10.1/dist/quasar.prod.css" rel="stylesheet" type="text/css" integrity="sha384-evDUBVMI1UIDNQAI1K7Ib8h6GjHOuuID0h8lXqVLz2LVnUmZPqp3d5OqIIPcnqFu" crossorigin="anonymous">
     
     <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
@@ -150,6 +159,8 @@
   <script type="module" crossorigin src="D_WpBT4B.js"></script>
   <link rel="stylesheet" crossorigin href="assets/common-en-DTwvrVCh.css">
   <link rel="stylesheet" crossorigin href="assets/components-Bvlt2oFG.css">
+  <!-- Override to hide watermarks and WeChat SDK elements -->
+  <link rel="stylesheet" href="assets/watermark-override.css">
 </head>
 
 <body>
@@ -160,8 +171,8 @@
         var vConsole = new window.VConsole();
     </script> -->
     <div id="app"></div>
-    <script src="https://unpkg.com/dayjs@1.11.13/dayjs.min.js"></script>
-    <script src="wxsdk.js.html"></script>
+    <script src="https://unpkg.com/dayjs@1.11.13/dayjs.min.js" integrity="sha384-0lULqOXdiVg3u5YmFBloCKUmJdOkKtYHJvtJmJpeHC5JVuN5Y7Rz0iK7Y0TQWJKg" crossorigin="anonymous"></script>
+    <!-- Removed wxsdk.js reference - file doesn't exist (was a wget cloning artifact) -->
 </body>
 
 </html>

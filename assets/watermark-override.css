@@ -1,0 +1,19 @@
+/* Override to hide watermarks */
+[class*="watermark"],
+[id*="watermark"],
+img[src*="watermark"],
+div[style*="watermark"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* Hide any WeChat/WeiXin related elements */
+[class*="weixin"],
+[class*="wechat"],
+[id*="weixin"],
+[id*="wechat"],
+[class*="wx-"],
+[id*="wx-"] {
+    display: none !important;
+}
